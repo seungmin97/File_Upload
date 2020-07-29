@@ -8,6 +8,7 @@
 </head>
 <body>
 <div>
+    <div name="code"></div>
     <div class="problem">
         <div><h1>Problem 01</h1></div>
         <div alignment="center">
@@ -46,9 +47,9 @@
         <br>
         <br>
     </div>
-    <form method="post" action="@{/}">
+    <form method="post" action="/code">
         <div class="text">
-        <textarea id="text">public boolean filter(String name){
+        <textarea id="text" name="code" style="height: 200px; width: 700px;">public boolean filter(String name){
   String filename = name.toUpperCase();
   boolean isSuc = false;
   if(filename.endsWith(".JPG")||filename.endsWith(".JPEG")||filename.endsWith(".GIF")) isSuc = true;
@@ -64,10 +65,10 @@
 </div>
 
 </body>
-<script type='text/javascript' src="index.js"></script>
 <script type="text/javascript">
     window.onload = function(){
         const editor = new Text("text");
     };
 </script>
 </html>
+
