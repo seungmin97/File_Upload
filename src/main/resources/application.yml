@@ -1,0 +1,14 @@
+##운영환경
+---
+server:
+  port: 8080
+
+
+##Database 설정
+---
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://Mysql@127.0.0.1:3306/jongsul?autoReconnect=true&useSSL=false
+    username: jongsul
+    password: 1234
